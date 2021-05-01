@@ -1,7 +1,36 @@
 
-<!--- Inline 3-->
+<!--- Inline 1-->
 <html>
-<head></head>
+<head>
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!--[if !mso]><!-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> 
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+
+
+
+</head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
@@ -28,11 +57,18 @@ td.social-title a:hover {
 .table {
   background: none rgb(32,226,189);
   margin: 0px;
-  padding: 15px 8vw 25px 6.5vw;
+ 
+  padding: 20px 8vw 30px 6.5vw;
 
 }
-
-
+#square {
+  width: 20px;
+  height: 3px;
+  background: #20e2bd;
+  margin-top: 8px;
+  
+}
+  
 
 td.logo a {
   text-decoration: none;
@@ -62,6 +98,7 @@ td.logo a {
   padding-left: 20px;
   padding-top: 20px;
   text-decoration: none;
+  
 }
 
 .padding-top{
@@ -76,10 +113,10 @@ td.logo a {
 }
 .job-description{
   font-family: 'Roboto 400', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 3px;
   margin-bottom: 0px;
-  color: #909092;
+  color: #909092;  
 }
 .line{
   width: 20px;
@@ -100,12 +137,12 @@ td.logo a {
 /*.........................................Headshot.....................................*/
 
 .logo img {
-  max-width: 20%;
-    height: auto;
-    float: right;
-    margin-left: 0px;
-    min-width: 150px;
-    padding-left: 15%;
+  max-width: 28%;
+  height: auto;
+  float: right;
+  margin-left: 0px;
+  min-width: 150px;
+  padding-left: 15%;
    
 
 
@@ -113,6 +150,7 @@ td.logo a {
 
 td.description-cell {
   padding: 0 0px 0 0px;
+  
 }
 
 td.description-cell > table {
@@ -120,6 +158,8 @@ td.description-cell > table {
   border: 0px;
   margin: 0;
   padding: 0;
+  
+   
 }
 
 
@@ -159,7 +199,9 @@ td.social-icons img {
        
 }
 @media screen and (max-width: 400px) {
-       
+       .logo{
+         width: 10px;
+       }
 }
       
       
@@ -169,16 +211,17 @@ td.social-icons img {
   
   <table class="table"  role="presentation">
     <tbody>
-     
+       
         <div class="person-bio">
           <p class="name-title">Theresa Quick</p>
           <p class="job-description">Chief Operating Officer</p>
-          <hr class="line">
+          <!-- hr class="line">-->
+          <div id="square"></div>
           <div style="margin-top: 30px; margin-left: 0px !important;" class="headshot">
             <img src="https://drive.google.com/uc?id=1D1FmMHKCu96xtjJ9rZ8j5zyYd-Q6xjFS" alt="">
           </div>
         </div>
-         
+        
         <td class="description-cell">
           <table  role="presentation">
             <tbody >
@@ -188,7 +231,7 @@ td.social-icons img {
               </tr>
               <tr class=" ">
                 <td colspan="2" class=" social-icons "><img src="https://drive.google.com/uc?id=12Ui4UxuliXw5AzrGkH-Vy8_DX3ZSOYzt" alt="Our Website"/></td>
-                <td colspan="2" class=" social-title"><a style="text-decoration: none !important; color: #59595d;"href="https://www.google.com">www.websitelink.com</a></td> 
+                <td colspan="2" class=" social-title"><a target="_blank"  style="margin-right:50px; text-decoration: none !important; color: #59595d;"href="https://www.upshelf.ai">Upshelf.ai</a><!--<b style="color: transparent;">webs</b>--></td> 
               </tr>
               <tr  class="icon-class">
                 <td colspan="2" class="social-icons"><img src="https://drive.google.com/uc?id=1h22CaW2i0czfUkipr3BVIkzihT3qJotu" alt="Linkedin"/></td>
@@ -208,7 +251,7 @@ td.social-icons img {
           
         </td>
         <td class="logo">
-          <a href="https://www.google.me">
+          <a target="_blank" href="https://www.upshelf.ai">
             <img style="min-width: 100px;" src="https://drive.google.com/uc?id=1Tr2bfkyjg6lkGwBWXzkEw30uqR6RbaJC" name="preview-image-url" alt=""/>
           </a>
         </td>

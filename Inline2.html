@@ -1,196 +1,49 @@
+
+
 <html>
-<head></head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+<head>
+  <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="x-apple-disable-message-reformatting">  
+    <title></title>  
 
-body {
-  display: flex;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-
-}
-
-/*.........................................Full table border.....................................*/
-
-.icon-class{
-  padding-top:100px;
-}
-
-td.social-title a:hover {
-  text-decoration: underline; color: #59595d;
-}
-/*.........................................Full tabke.....................................*/
-
-.table {
-  background: none rgb(32,226,189);
-  margin: 0px;
-  padding: 15px 8vw 25px 6.5vw;
-
-}
+ 
 
 
 
-td.logo a {
-  text-decoration: none;
-}
+</head>
 
-.headshot img{
+
+ <div class="presentational-container">
   
-  vertical-align: middle;
-  width:130px;
-  border-radius: 50%;
-  border: 5px solid #34cdff;
-  margin-left: -30px;
-
-  width:120px;
-  height:120px;
-  object-fit:cover;
-  border-radius:50%;
-
-}
-
-.social-title{
-  font-family: 'Roboto 500', sans-serif;
-  font-size: 13px;
-  vertical-align: middle;
-  margin-bottom: 0px;
-  color: #59595d;
-  padding-left: 20px;
-  padding-top: 20px;
-  text-decoration: none;
-}
-
-.padding-top{
-  padding-top: 20;
-}
-
-/*.........................................First Bio.....................................*/
-.name-title{
-  font-family: 'Roboto 500', sans-serif;
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-.job-description{
-  font-family: 'Roboto 400', sans-serif;
-  font-size: 15px;
-  margin-top: 3px;
-  margin-bottom: 0px;
-  color: #909092;
-}
-.line{
-  width: 20px;
-  float: left;
-  border: 1px solid #20e2bd;
-  margin-top: 8px;
-  background-color: #20e2bd;
-  height: 1px;
-  width: 17px;
-
-
-}
-
-.person-bio{
- margin-left: 5vw;
- margin-bottom: 20px;
-}
-/*.........................................Headshot.....................................*/
-
-.logo img {
-  max-width: 30%;
-    height: auto;
-    float: right;
-    margin-left: 0px;
-    min-width: 150px;
-    padding-left: 15%;
-   
-
-
-}
-
-td.description-cell {
-  padding: 0 0px 0 0px;
-}
-
-td.description-cell > table {
-  background: none;
-  border: 0px;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-td.social-icons {
-  padding-top: 18px;
-  vertical-align: top;
-}
-
-td.social-icons ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 25px;
-}
-
-td.social-icons li {
-  display: inline-block;
-}
-
-td.social-icons a {
-  text-decoration: none;
-}
-
-td.social-icons img {
-  width: 15px;
-  height: 15px;
-  vertical-align: middle;
-}
-@media screen and (max-width: 600px) {
-
-.social-title{
-  font-size: 18px;
-
-}
-
-       
-}
-@media screen and (max-width: 400px) {
-       
-}
-      
-      
-</style>
-
- <div  class="presentational-container">
-  
-  <table class="table"  role="presentation">
+  <table width="100%" style="margin-right: 0px;background: none rgb(32,226,189);margin: 0px;padding: 30px 8vw 25px 6.5vw;" class="table" role="presentation">
     <tbody>
-     
-        <div class="person-bio">
-          <p class="name-title">Theresa Quick</p>
-          <p class="job-description">Chief Operating Officer</p>
-          <hr class="line">
+       
+        <div class="person-bio" style="margin-left: 5vw;margin-bottom: 20px;">
+          <p class="name-title" style="font-family: 'Roboto 500', sans-serif;font-size: 20px;margin-bottom: 0px;">Theresa Quick</p>
+          <p class="job-description" style="font-family: 'Roboto 400', sans-serif;font-size: 15px;margin-top: 3px;margin-bottom: 0px;color: #909092;">Chief Operating Officer</p>
+          <!-- hr class="line">-->
+          <div id="square" style="width: 20px;height: 3px;background: #20e2bd;margin-top: 8px;"></div>
           <div style="margin-top: 30px; margin-left: 0px !important;" class="headshot">
-            <img src="https://drive.google.com/uc?id=1D1FmMHKCu96xtjJ9rZ8j5zyYd-Q6xjFS" alt="">
+            <img src="https://drive.google.com/uc?id=1D1FmMHKCu96xtjJ9rZ8j5zyYd-Q6xjFS" alt="" style="vertical-align: middle;width: 120px;border-radius: 50%;border: 5px solid #34cdff;margin-left: -30px;height: 120px;object-fit: cover;">
           </div>
         </div>
-         
-        <td class="description-cell">
-          <table  role="presentation">
-            <tbody >
+        
+        <td width="60%" class="description-cell" style="padding: 0 0px 0 0px;margin-right: 0px;">
+          <table role="presentation" style="background: none;border: 0px;margin: 0;padding: 0;">
+            <tbody>
               <tr class="icon-class ">
-                <td colspan="2" class=" social-icons"><img src="https://drive.google.com/uc?id=1rIn0Od3c0U8ZSTKVbadidfnzbEcXSMVJ" alt="Phone Number"/></td>
-                <td colspan="1" class=" social-title"><a  style="text-decoration: none !important; color: #59595d;" href="tel:647-616-5342">(647) 616-5342</a></td>
+                <td colspan="2" class=" social-icons" style="padding-top: 0px;vertical-align: top;"><img src="https://drive.google.com/uc?id=1rIn0Od3c0U8ZSTKVbadidfnzbEcXSMVJ" alt="Phone Number" style="width: 15px;height: 15px;vertical-align: middle;"></td>
+                <td colspan="1" class=" social-title" style="padding-top: 0px;font-family: 'Roboto 500', sans-serif;font-size: 13px;vertical-align: middle;margin-bottom: 0px;color: #59595d;padding-left: 20px;text-decoration: none;"><a style="text-decoration: none !important; color: #59595d;" href="tel:647-616-5342">(647) 616-5342</a></td>
               </tr>
               <tr class=" ">
-                <td colspan="2" class=" social-icons "><img src="https://drive.google.com/uc?id=12Ui4UxuliXw5AzrGkH-Vy8_DX3ZSOYzt" alt="Our Website"/></td>
-                <td colspan="2" class=" social-title"><a style="text-decoration: none !important; color: #59595d;"href="https://www.google.com">www.websitelink.com</a></td> 
+                <td colspan="2" class=" social-icons " style="padding-top: 18px;vertical-align: top;"><img src="https://drive.google.com/uc?id=12Ui4UxuliXw5AzrGkH-Vy8_DX3ZSOYzt" alt="Our Website" style="width: 15px;height: 15px;vertical-align: middle;"></td>
+                <td colspan="2" class=" social-title" style="font-family: 'Roboto 500', sans-serif;font-size: 13px;vertical-align: middle;margin-bottom: 0px;color: #59595d;padding-left: 20px;padding-top: 20px;text-decoration: none;"><a target="_blank" style=" text-decoration: none !important; color: #59595d;" href="https://www.upshelf.ai">Upshelf.ai</a><!--<b style="color: transparent;">webs</b>--></td> 
               </tr>
-              <tr  class="icon-class">
-                <td colspan="2" class="social-icons"><img src="https://drive.google.com/uc?id=1h22CaW2i0czfUkipr3BVIkzihT3qJotu" alt="Linkedin"/></td>
-                <td colspan="2" class=" social-title"><a  style="text-decoration: none !important; color: #59595d; " href="https://www.linkedin.com/in/theresa-quick">Linkedin</a></td>
+              <tr class="icon-class">
+                <td colspan="2" class="social-icons" style="padding-top: 18px;vertical-align: top;"><img src="https://drive.google.com/uc?id=1h22CaW2i0czfUkipr3BVIkzihT3qJotu" alt="Linkedin" style="width: 15px;height: 15px;vertical-align: middle;"></td>
+                <td colspan="2" class=" social-title" style="font-family: 'Roboto 500', sans-serif;font-size: 13px;vertical-align: middle;margin-bottom: 0px;color: #59595d;padding-left: 20px;padding-top: 20px;text-decoration: none;"><a style="text-decoration: none !important; color: #59595d; " href="https://www.linkedin.com/in/theresa-quick">Linkedin</a></td>
               </tr>
               <!--<tr>
                 <td colspan="2" class="social-icons"><img src="https://drive.google.com/uc?id=1m-uOoFzHn4oUGlEsDSEfPBbJ2QhBJzlM" alt="Let's be friends on Facebook."/></td>
@@ -205,9 +58,9 @@ td.social-icons img {
           </table>
           
         </td>
-        <td class="logo">
-          <a href="https://www.google.me">
-            <img style="min-width: 100px;" src="https://drive.google.com/uc?id=1Tr2bfkyjg6lkGwBWXzkEw30uqR6RbaJC" name="preview-image-url" alt=""/>
+        <td width="40%" class="logo">
+          <a target="_blank" href="https://www.upshelf.ai" style="text-decoration: none;">
+            <img style="min-width: 100px;width: 29%;height: auto;float: right;margin-left: 0px;padding-left: 15%;" src="https://drive.google.com/uc?id=1Tr2bfkyjg6lkGwBWXzkEw30uqR6RbaJC" name="preview-image-url" alt="">
           </a>
         </td>
       
